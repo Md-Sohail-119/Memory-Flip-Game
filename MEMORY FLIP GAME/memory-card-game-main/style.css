@@ -1,0 +1,346 @@
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: #12181f;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 8px 16px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: #27ae60;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 16px;
+  grid-template-columns: repeat(6, 140px);
+  grid-template-rows: repeat(2, calc(140px / 2 * 3));
+}
+
+.card {
+  height: calc(140px / 2 * 3);
+  width: 140px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+
+.front-image {
+  width: 60px;
+  height: 60px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .back {
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M25 30a5 5 0 110-10 5 5 0 010 10zm0-25a5 5 0 110-10 5 5 0 010 10zM0 30a5 5 0 110-10 5 5 0 010 10zM0 5A5 5 0 110-5 5 5 0 010 5zm12.5 12.5a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='none' fill='hsla(174, 100%, 29%, 1)'/><path d='M0 15a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm25 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM12.5 2.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0 25a2.5 2.5 0 110-5 2.5 2.5 0 010 5z'  stroke-width='1' stroke='none' fill='hsla(187, 100%, 42%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  transform: rotateY(180deg);
+}
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: #12181f;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 8px 16px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: #27ae60;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-gap: 16px;
+  grid-template-columns: repeat(6, 140px);
+  grid-template-rows: repeat(2, calc(140px / 2 * 3));
+}
+
+.card {
+  height: calc(140px / 2 * 3);
+  width: 140px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+
+.front-image {
+  width: 60px;
+  height: 60px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .back {
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='25' height='25' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M25 30a5 5 0 110-10 5 5 0 010 10zm0-25a5 5 0 110-10 5 5 0 010 10zM0 30a5 5 0 110-10 5 5 0 010 10zM0 5A5 5 0 110-5 5 5 0 010 5zm12.5 12.5a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='none' fill='hsla(174, 100%, 29%, 1)'/><path d='M0 15a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm25 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM12.5 2.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0 25a2.5 2.5 0 110-5 2.5 2.5 0 010 5z'  stroke-width='1' stroke='none' fill='hsla(187, 100%, 42%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  transform: rotateY(180deg);
+}
+/* --- Professional UI theme, cleaner palette and spacing --- */
+:root{
+  --bg-1: #071026; /* deep night */
+  --bg-2: #0b1a2b; /* subtle gradient */
+  --surface: #0f2433; /* card/score background */
+  --muted-surface: #132a3a;
+  --panel: #0f1724;
+  --accent: #2563eb; /* professional blue */
+  --accent-2: #06b6d4; /* teal accent */
+  --text: #e6eef7;
+  --muted-text: #9fb3c8;
+  --card-bg: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 24px 0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 18px;
+  color: var(--text);
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+p {
+  font-size: 16px;
+  color: var(--muted-text);
+  margin: 10px 0;
+}
+
+.game-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 48px; /* more breathing room */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+.score-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 22px;
+  border-radius: 12px;
+  min-width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+.current-stats, .best-stats {
+  background: linear-gradient(180deg, var(--muted-surface), rgba(11,26,43,0.6));
+  padding: 12px;
+  border-radius: 8px;
+  margin: 12px 0;
+  border: 1px solid rgba(255,255,255,0.02);
+}
+
+h3 {
+  color: var(--accent);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.timer, .moves, .best-time, .best-moves {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0;
+  color: var(--text);
+}
+
+#stopwatch, .score, #best-time, #best-score {
+  color: var(--accent-2);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 8px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease;
+  box-shadow: 0 6px 14px rgba(37,99,235,0.12);
+}
+
+.actions button:hover{background-color: #1e4fd8; transform: translateY(-1px);}
+.actions .reset-btn{ background-color: transparent; color: var(--muted-text); border: 1px solid rgba(255,255,255,0.06); box-shadow: none; }
+.actions .reset-btn:hover{ color: var(--text); background-color: rgba(255,255,255,0.02); border-color: rgba(255,255,255,0.08); }
+
+/* space between multiple action buttons (e.g., Restart and Reset) */
+.actions button:not(:last-child) {
+  margin-right: 12px;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: start;
+  grid-gap: 18px;
+  grid-template-columns: repeat(6, 140px);
+  grid-template-rows: repeat(2, calc(140px / 2 * 3));
+}
+
+.card {
+  height: calc(140px / 2 * 3);
+  width: 140px;
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(.2,.9,.3,1), box-shadow .2s ease;
+  box-shadow: 0 6px 14px rgba(2,6,23,0.3);
+  overflow: hidden;
+  border: 1px solid rgba(16,24,32,0.04);
+}
+
+.front-image {
+  width: 64px;
+  height: 64px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+  box-shadow: 0 14px 30px rgba(2,6,23,0.45);
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .back {
+  background-image: linear-gradient(180deg, rgba(37,99,235,0.06), rgba(6,182,212,0.03));
+  background-position: center center;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+.card .front {
+  transform: rotateY(180deg);
+}
